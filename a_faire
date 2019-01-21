@@ -1,0 +1,17 @@
+
+0.0 Creation
+0.0 les parametres par defaut sont lu dans la memoire partagee
+0.0	remis un peu de couleur
+	attention interdire la possibilite de mettre une io en entree ET en sortie
+	attention si changement broche verifier si entree (cpt) ou sortie (spn)
+	adapter la selection possible des broche en fonction du µC
+	la gestion des broches doit etre adapte a la carte (externalisation)
+	quand change une sortie la passer en sortie et l'ancienne en Z
+	si change etat si possible on garde la meme broche
+	plantage si changement type sortie
+	erreur: affichage t° alors qu'il n'y a pas de capteur en eeprom (eeprom.ino n'a pas ete installe avant watercooling)
+	si le fichier de conf n'existe pas -> erreur de segmentation
+	erreur si lecture parametre
+	si passage indexe a no plantage srt(pmp)()=0
+	ajouter n° message dans le protocole pour ack no et nack no message ???
+	

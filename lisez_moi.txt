@@ -1,0 +1,52 @@
+
+// nom: mdfprm
+// long: Modification et affichage des parametres de Watercooling.INO
+// version: 0.6
+// creation: 11/2016
+// modification: 
+// lancement: graphique
+// but: 
+// complement: srvnano vslprm smlwtr watercooling.ino 
+// paquet: 
+// info: 
+
+but:
+	Automatisation avec carte a µcontroleur
+	Parametrage simple web et interface gaphique
+
+paquet:
+	watercooling.ino arduino carte nano
+	mdfprm gtk visualisation et modification des parametres de la carte nano
+	srvnano serveur http pour interface web
+	mmrprt gestion memoire partage et port serie (doit toujours tourner ou lancement auto ou lancer par sous prog)
+	smlwtr gtk simulateur watercooling carte nano 
+
+watercooling.ino
+	entrees avec capteurs de temperatures
+	entrees / sorties numeriques
+	entrees analogiques
+	sorties analogiques (pwm)
+	
+srvnano
+	lance en automatique
+	serveur web mise a dispo des donnees sur le reseau local
+	receptionne les donnees de la carte nano
+	gere de la memoire partage pour la dispo des donnees des prog gtk
+
+mdfprm
+	interface graphique pour voir et modifier les parametres
+	
+mmrprt
+	console partage de memoire et gestion communication avec nano
+	
+smlwtr
+	interface graphique qui simule la carte nano
+
+Les fichiers:
+* pour chaque carte ou µcontroleur
+*.brc obligatoire broche avr permet de connaitre le nombre io dgt le nombre entree anl les pwm les timers
+*.ard broche reserve arduino disable broche et io
+*.baf affichage du texte des broches pour bascule dgl anl si click
+*.bhl affichage de l'aide au niveau des broches
+*.hlp affichage de l'aide au niveau des IO
+
